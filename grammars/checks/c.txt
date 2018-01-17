@@ -1,0 +1,5 @@
+c_regel_1 : undefined_in_c | c_regel_1 | c_regel_2 | global_c;
+c_regel_2 : global | global_amb ;
+global_c: "global_c" ;
+global_amb_2 : "global_amb_2";
+unused_in_3 : 's' | 'd';

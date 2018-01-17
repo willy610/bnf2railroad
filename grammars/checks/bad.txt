@@ -1,0 +1,11 @@
+regel: 'A' |'s'  ;
+regel2: 'S' | '\X01' ;
+regel3: 'A' ~ 'Z';
+regel4: '\X41' ~  '\X5A';
+regel5: ('A' ~  '\X5A')+;
+field_list  :    [ identifier+ ':' "type" ] ?  ,';'
+ [ "case"  identifier  ':'  type_identifier  "of" 
+  [  constant  ,','   ':'  '('  field_list  ')' ]  ,';'  ]? ;
+opt: [ "case"  identifier  ':'  type_identifier  "of" 
+  [  constant  ,','   ':'  '('  field_list  ')' ]  ,';'  ]? ;
+OF :  ( constant  ,','   ':'  '('  field_list  ')' )  ,';' ;

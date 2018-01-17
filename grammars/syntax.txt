@@ -1,0 +1,18 @@
+grammar : rule + ;
+rule    : IDENTIFIER ':' productionrule ';' ;
+productionrule : sequence  , '|' ;
+sequence : ( item repeats ) + ;
+item : LITERAL ( '~' LITERAL)? 
+			| (IDENTIFIER ('-' IDENTIFIER) ? )
+			| '[' productionrule ']'
+			| '(' productionrule ')' ;
+repeats : (
+NUMBER  
+  | ( '*' | '+' )  NUMBER ? 
+  |  '?' 
+  | ( ',' LITERAL )
+  ) ?;
+LITERAL : 'a' ~ 'z' | 'A' ~ 'Z';
+IDENTIFIER : LITERAL (LITERAL | NUMBER | '_')+ ;
+NUMBER : '1' ~ '9' ('0' ~ '9') + ;
+  

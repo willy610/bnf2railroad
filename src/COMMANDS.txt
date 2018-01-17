@@ -1,0 +1,7 @@
+command : VER | HELP | GO ;
+VER : "--version" ;
+HELP : "--help" ; 
+GO : [ "--tty" | "--svg" | "--html" | "--check"] GRAMMER OUT ;
+GRAMMER : [ ["--grammar" |  "--gr" ] grammar_file_name 
+  | [ "--groupgrammar" | "--grgr" ] file_with_set_of_grammar_file_names ]  ;
+OUT : [ "--out" out_file_name ] ?;

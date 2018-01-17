@@ -1,0 +1,7 @@
+closure_type : [ "unsafe" ] [ '<' lifetime_list '>' ] '|' arg_list '|'
+                [ ':' bound_list ] [ "->" type ] ;
+                
+
+
+lifetime_list : lifetime | lifetime ',' lifetime_list ;
+arg_list : ident ':' type | ident ':' type ',' arg_list ;

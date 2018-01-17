@@ -1,0 +1,13 @@
+format_string : text [ maybe_format text ] * ;
+maybe_format : '{' '{' | '}' '}' | format ;
+format : '{'  argument  ? [ ':' format_spec ]? '}' ;
+argument : integer | identifier ;
+format_spec : [ fill ? align]? sign ? '#'? '0'? width? ['.' precision] ? type? ;
+fill : character ;
+align : '<' | '^' | '>' ;
+sign : '+' | '-' ;
+width : count ;
+precision : count | '*' ;
+type : identifier | '' ;
+count : parameter | integer ;
+parameter : argument '$' ;

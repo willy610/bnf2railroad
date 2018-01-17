@@ -1,0 +1,3 @@
+lilla_alfa : 'a' ~ 'z' ;
+dumma: 'x' 'q' 'w';
+bra : lilla_alfa - dumma | 'A';

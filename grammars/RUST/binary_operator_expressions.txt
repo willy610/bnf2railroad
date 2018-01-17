@@ -1,0 +1,16 @@
+binop_expr : expr binop expr | type_cast_expr
+           | assignment_expr | compound_assignment_expr ;
+binop : arith_op | bitwise_op | lazy_bool_op | comp_op;
+
+arith_op : '+' | '-' | '*' | '/' | '%' ;
+
+bitwise_op : '&' | '|' | '^' | "<<" | ">>" ;
+
+lazy_bool_op : "&&" | "||" ;
+
+comp_op : "==" | "!=" | '<' | '>' | "<=" | ">=" ;
+
+assignment_expr : expr '=' expr ;
+
+compound_assignment_expr : expr [ arith_op | bitwise_op ] '=' expr ;
+

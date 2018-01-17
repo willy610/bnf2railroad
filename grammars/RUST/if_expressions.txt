@@ -1,0 +1,5 @@
+if_expr : "if" no_struct_literal_expr '{' block '}'
+          else_tail ? ;
+
+else_tail : "else" [ if_expr | if_let_expr
+                   | '{' block '}' ] ;

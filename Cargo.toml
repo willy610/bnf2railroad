@@ -1,0 +1,6 @@
+[package]
+name = "bnf2railroad"
+version = "0.1.0"
+authors = ["Willy Svenningsson <willy@fager.st>"]
+
+[dependencies]

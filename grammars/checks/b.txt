@@ -1,0 +1,4 @@
+b_regel_1 : undefined_in_b | b_regel_1 | b_regel_2 | global_b;
+b_regel_2 : global | global_amb;
+global_b: "global_b" ;
+global_amb : "global_amb";

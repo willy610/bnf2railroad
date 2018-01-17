@@ -1,0 +1,2 @@
+block_expr : '{' [ stmt | item ] *
+                 [ expr ] '}' ;

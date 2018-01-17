@@ -1,0 +1,5 @@
+a_regel_1 : undefined_in_a | a_regel_1 | a_regel_2 | global_a;
+a_regel_2 : global | global_amb | "if" | "elsa" | "vila" ;
+global_a: "global_a_value_as_string" ;
+global_amb : "global_amb";
+global_amb_2 : "global_amb_2";

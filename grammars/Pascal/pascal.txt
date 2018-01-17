@@ -1,0 +1,53 @@
+identifier  : letter  [ letter | digit ] * ;
+unsigned_integer : digit + ;
+unsigned_number  : unsigned_integer  [ '.'  digit + ] ?
+ [ 'E'  [ '+' | '-' ]?  unsigned_integer ] ? ;
+unsigned_constant  : constant_identifier | unsigned_number | "nil" | "'"  character + "'" ;
+constant  : [ '+' | '-' ]?  [ constant_identifier | unsigned_number ] | "'"   character +  "'" ;
+variable  : [ variable_identifier | field_identifier ] 
+ [ [ '['   expression  ,','   ']' | '.'  field_identifier | '^' ]* ]  ? ;
+factor  : unsigned_constant 
+          | variable 
+          | [ function_identifier  [ '('   expression  ,','   ')' ]? ]
+          | '('  expression  ')' 
+          | "not"  factor 
+          | '['  [ [ expression  [ ".."  expression ]  ] ,','  ]?  ']' ;
+term  : factor  [ [ [ "and" | "mod" | "div" | '/' | '*' ]  factor ]+ ]? ;
+simple_expression  : [ '+' | '-' ]?  term  [ [ [ '+' | '-' | "or" ]  term ]+ ]? ;
+expression  : simple_expression  [ [ [ '=' | '<' | '>' | "!=" | "<=" | ">=" | "in" ]  simple_expression ]+]? ;
+
+parameter_list  : [ '('  [ [ [ "function" | "var" ]?   identifier  ,','  
+ ':'  type_identifier | "procedure"   identifier  ,','  ]  ,';' ]  ')' ]? ;
+ simple_type  : type_identifier | '('   identifier  ,','   ')' | constant  ".."  constant ;
+ type  : simple_type | '^'  type_identifier |  "packed"?   "array"  '['   simple_type  ,','   ']'  "of"  type | "file"  "of"  type | "set"  "of"  simple_type | "record"  field_list  "end" ;
+
+field_list  :    [ identifier+ ':' "type" ] ?  ,';'
+
+ [ "case"  identifier  ':'  type_identifier  "of" 
+  [  constant  ,','   ':'  '('  field_list  ')' ]  ,';'  ]? ;
+
+ statement  : [ unsigned_integer  ':' ] ? 
+ [ [ variable | function_identifier ]  ":="   expression 
+ | procedure_identifier  [ '('  [ [ expression | procedure_identifier ]  ,',' ]  ')' ] ?
+  | "begin"   statement  ,';'   "end" 
+  | "if"  expression  "then"  statement  [ "else"  statement ]? 
+  | "case"  expression  "of"    [ [  constant  ,','   ':'  statement ]  ,';' ]*  "end" 
+  | "while"  expression  "do"  statement | "repeat"  statement  ,';'   "until"  expression 
+  | "for"  variable_identifier  ":="  expression  [ "to" | "downto" ]  expression  "do"  statement 
+  | "with"   variable  ,','   "do"  statement | "goto"  unsigned_integer ]? ;
+
+
+block  : label ?   constdcl ?   typedcl ?   vardcl ?   procandfuncdcl ?      "begin" 
+  statement  ,';' "end" ;
+
+
+label  : "label"   unsigned_integer  ,','   ';' ;
+constdcl  : "const"  [ identifier  '='  constant ]  ,';'  ;
+typedcl  : "type"  [ identifier  '='  type ]  ,';'  ;
+vardcl  : "var"   [  identifier  ,',' ]  ,';'   type ;
+
+procandfuncdcl  : [ [ "procedure"  indentifier  parameter_list 
+| "function"  indentifier  parameter_list  ':'  type_identifier ]  ';'  block  ';' ]+ ;
+
+
+program  : "program"  identifier  '('   identifier  ,','   ')'  ';'  block  '.' ;

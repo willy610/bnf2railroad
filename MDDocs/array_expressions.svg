@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+id="canvas" width="840" height="504" preserveAspectRatio="xMidYMid">
+
+<defs><style type="text/css">
+
+.TEXT {font-size:12px;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+.TEXTRULE {font-size:12px;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+.TEXTBOLD {font-size:12px;font-weight: bold;font-family: Lucida Console;stroke:none;fill:black;}
+.TEXTLITERAL {font-size:12px;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+.BOXID {fill:Khaki}
+.BOXLITERAL {fill:lightgreen}
+.BOXRESEREDWORD {fill:LightCyan}
+.BOXGROUND {fill:black}
+.PIL {fill:black}
+.RAILSEQ {stroke:black; fill:none; stroke-width:1.5}
+.RAILCHOICE {stroke:black; fill:none; stroke-width:1.5}
+.RAILITER {stroke:black; fill:none; stroke-width:1.5}
+.RAILOPT {stroke:black; fill:none; stroke-width:1.5}
+.BOXOUTLINE {stroke:green; stroke-width:1.5; }
+.TITEL {font-size:130%;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+          </style></defs>
+<g>
+<text class="TITEL" x="8" y="75">Grammar filename: grammars/RUST/array_expressions.txt</text>
+<text class="TEXTRULE" x="8" y="147">array_expr</text>
+<text class="TEXTRULE" x="96" y="147">:</text>
+<line class="RAILSEQ" x1="120" y1="144" x2="176" y2="144"></line>
+<rect class="BOXGROUND" x="128.8" y="132" width="40" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="128" y="130.8" width="40" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="136" y="147">'['</text>
+
+<line class="RAILSEQ" x1="176" y1="144" x2="296" y2="144"></line>
+<path class="RAILOPT" d="M 176,144 C 188,144 188,144 188,156 L 188,168 C 188,180 188,180 200,180"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(188,162) rotate(0) scale(0.8,0.8)"></path><path class="RAILOPT" d="M 296,144 C 284,144 284,144 284,156 L 284,168 C 284,180 284,180 272,180"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(284,162) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="200" y1="180" x2="272" y2="180"></line>
+<rect class="BOXGROUND" x="208.8" y="168" width="40" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXRESEREDWORD" x="208" y="166.8" width="40" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="216" y="183">mut</text>
+
+<line class="RAILSEQ" x1="296" y1="144" x2="464" y2="144"></line>
+<path class="RAILOPT" d="M 296,144 C 308,144 308,144 308,156 L 308,168 C 308,180 308,180 320,180"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(308,162) rotate(0) scale(0.8,0.8)"></path><path class="RAILOPT" d="M 464,144 C 452,144 452,144 452,156 L 452,168 C 452,180 452,180 440,180"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(452,162) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="320" y1="180" x2="440" y2="180"></line>
+<rect class="BOXGROUND" x="328.8" y="168" width="104" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="328" y="166.8" width="104" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="336" y="183">array_elems</text>
+
+<line class="RAILSEQ" x1="464" y1="144" x2="520" y2="144"></line>
+<rect class="BOXGROUND" x="472.8" y="132" width="40" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="472" y="130.8" width="40" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="480" y="147">']'</text>
+
+<text class="TEXTRULE" x="8" y="255">array_elems</text>
+<text class="TEXTRULE" x="96" y="255">:</text>
+<line class="RAILSEQ" x1="120" y1="252" x2="352" y2="252"></line>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(132,288) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(340,288) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="144" y1="252" x2="272" y2="252"></line>
+<line class="RAILSEQ" x1="144" y1="252" x2="272" y2="252"></line>
+<line class="RAILSEQ" x1="144" y1="252" x2="272" y2="252"></line>
+<line class="RAILSEQ" x1="144" y1="252" x2="272" y2="252"></line>
+<path class="RAILOPT" d="M 168,252 C 156,252 156,252 156,264 L 156,276 C 156,288 156,288 168,288"></path>
+<path class="RAILOPT" d="M 248,252 C 260,252 260,252 260,264 L 260,276 C 260,288 260,288 248,288"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(156,270) rotate(180) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(260,270) rotate(0) scale(0.8,0.8)"></path><rect class="BOXGROUND" x="176.8" y="240" width="48" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="176" y="238.8" width="48" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="184" y="255">expr</text>
+
+<line class="RAILSEQ" x1="168" y1="288" x2="248" y2="288"></line>
+<rect class="BOXGROUND" x="192.8" y="276" width="40" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="192" y="274.8" width="40" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="200" y="291">','</text>
+
+<line class="RAILSEQ" x1="144" y1="324" x2="328" y2="324"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(132,324) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(340,324) rotate(180)"></path>
+<path class="RAILOPT" d="M 120,252 C 132,252 132,252 132,264 L 132,312 C 132,324 132,324 144,324"></path>
+<path class="RAILOPT" d="M 352,252 C 340,252 340,252 340,264 L 340,312 C 340,324 340,324 328,324"></path>
+<line class="RAILSEQ" x1="144" y1="324" x2="328" y2="324"></line>
+<line class="RAILSEQ" x1="144" y1="324" x2="328" y2="324"></line>
+<line class="RAILSEQ" x1="144" y1="324" x2="208" y2="324"></line>
+<rect class="BOXGROUND" x="152.8" y="312" width="48" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="152" y="310.8" width="48" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="160" y="327">expr</text>
+
+<line class="RAILSEQ" x1="208" y1="324" x2="264" y2="324"></line>
+<rect class="BOXGROUND" x="216.8" y="312" width="40" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="216" y="310.8" width="40" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="224" y="327">';'</text>
+
+<line class="RAILSEQ" x1="264" y1="324" x2="328" y2="324"></line>
+<rect class="BOXGROUND" x="272.8" y="312" width="48" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="272" y="310.8" width="48" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="280" y="327">expr</text>
+
+</g></svg>

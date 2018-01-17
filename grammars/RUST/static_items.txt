@@ -1,0 +1,1 @@
+static_item : "static" ident ':' type '=' expr ';' ;

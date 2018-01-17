@@ -1,0 +1,72 @@
+Chunk : (Statement [";"]?)* (LastStatement (";")?)? ;
+
+Block : Chunk ;
+
+Statement :  VariableList "=" ExpressionList |
+  FunctionCall |
+  "do" Block "end" |
+  "while" Expression "do" Block "end" |
+  "repeat" Block "until" Expression |
+  "if" Expression "then" Block
+    ("elseif" Expression "then" Block)*
+    ("else" Block)? "end" |
+  "for" Name "=" Expression "," Expression ("," Expression)?
+    "do" Block "end" |
+  "for" NameList "in" ExpressionList
+    "do" Block "end" |
+  "function" FunctionName FunctionBody |
+  "local" "function" Name FunctionBody |
+  "local" NameList ("=" ExpressionList)? ;
+
+LastStatement : "return" (ExpressionList)? | "break" ;
+
+FunctionName : Name,',' (":" Name)? ;
+
+VariableList : Variable ("," Variable)* ;
+
+Variable :  Name |
+  PrefixExpression "[" Expression "]" |
+  PrefixExpression "." Name ;
+
+NameList : Name,',' ;
+
+ExpressionList : Expression,',' ;
+
+Expression :  "nil" | "false" | "true" |
+  Number | String | "..." | Function |
+  PrefixExpression | TableConstructor |
+  Expression BinaryOperator Expression |
+  UnaryOperator Expression ;
+
+PrefixExpression : Variable |
+  FunctionCall |
+  "(" Expression ")" ;
+
+FunctionCall : PrefixExpression Arguments |
+  PrefixExpression ":" Name Arguments ;
+
+Arguments :  "(" (ExpressionList)? ")" |
+  TableConstructor | String ;
+
+Function : "function" FunctionBody ;
+
+FunctionBody : "(" (ParameterList)? ")" Block "end" ;
+
+ParameterList : NameList ("," "...")? | "..." ;
+
+TableConstructor : "{" (FieldList)? "}" ;
+
+FieldList : Field (FieldSeparator Field)* (FieldSeparator)? ;
+
+Field : "[" Expression "]" "=" Expression |
+  Name "=" Expression | Expression ;
+
+FieldSeparator : "," | ";" ;
+
+BinaryOperator : "+" | "-" | "*" | "/" |
+  "^" | "%" | ".." |
+  "<" | "<=" | ">" | ">=" |
+  "==" | "~=" |
+  "and" | "or" ;
+
+UnaryOperator : "-" | "not" | "#" ;

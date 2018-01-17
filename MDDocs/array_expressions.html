@@ -1,0 +1,13 @@
+<pre>
+                                                                    
+                                                                    
+ Grammar filename: grammars/RUST/array_expressions.txt              
+                                                                    
+ <a name='array_expr'></a>array_expr  : - '[' --[>--------->]--[>--------------->]-- ']' -   
+                       [>- "mut" ->]  [>- <a href='#array_elems'>array_elems</a> ->]           
+                                                                    
+ <a name='array_elems'></a>array_elems : -[>-{>- <a href='#expr'>expr</a> --->}-------->]-                        
+                [  {<--- ',' --<}         ]                         
+                [>- <a href='#expr'>expr</a> -- ';' -- <a href='#expr'>expr</a> ->]                         
+                                                                    
+</pre>

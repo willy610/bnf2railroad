@@ -1,0 +1,2 @@
+ident_list : (ident ,',') ? ;
+lambda_expr : '|' ident_list '|' expr ;

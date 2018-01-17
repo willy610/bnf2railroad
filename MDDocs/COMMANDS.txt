@@ -1,0 +1,12 @@
+command  : VER | HELP | CHECK | VIEW | GEN ;
+VER      : "--version" ;
+HELP     : "--help" ; 
+CHECK    : "--check" GRAMMER; 
+VIEW     : [ "--tty" | "--svg" | "--html"  ] GRAMMER RESWORDS? OUT? ;
+GRAMMER  : [ ["--grammar" |  "--gr" ] grammar_file_name 
+           | [ "--groupgrammar" | "--grgr" ] file_with_set_of_grammar_file_names ]  ;
+RESWORDS : "--reswords" file_with_reserved_symbols ;
+OUT      : [ "--out" out_file_name ] ;
+SEED     : "--seed" seednumber ;
+MAXSTEPS : "--maxsteps" number ;
+GEN      : "--genrule" rule_name RESWORDS ?   SEED ? MAXSTEPS ?;

@@ -1,0 +1,16 @@
+object  : '{'  [[ string  ':'  value   ] ,','] ?  '}';
+
+array  : '['  [ [ value  ,',' ] ]?  ']' ;
+
+value  : string | number | object | array | "true" | "false" | "null" ;
+
+number  : [ '-' ]?  [ '0' | [ digit1t09  digit *  ] ]  [ '.'   digit + ]  [ [ 'e' | 'E' ]  [ '+' | '-' ]?   digit+ ]? ;
+
+string  : [ '"'  [ anyUNICODexceptquotANDrevers | [ '\'  [ '"' | '\' | 'b' | 'f' | 'n' | 'r' | 't' | uxxxx ] ] ]*  '"' ] ;
+
+digit1t09 : '1' ~ '9' ;
+
+digit : '0' ~ '9' ;
+anyUNICODexceptquotANDrevers : '!' | ('#' ~ '[') | (']' ~ '~' );
+uxxxx : 'u' ( hexdigit hexdigit hexdigit hexdigit) ;
+hexdigit : '0' ~ '9' | 'A' ~ 'F' | 'a' ~ 'f' ;

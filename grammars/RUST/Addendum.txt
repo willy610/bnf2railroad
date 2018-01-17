@@ -1,0 +1,76 @@
+character_commnet1 : "all ascii /latin us-printable";
+character_commnet2 : "non ascii operating systems has other hexvalues for character!!";
+character_commnet3 : "so most hex are not protable and not intervals ~ ";
+
+character : (' '  ~  '~') | '\x09' | '\x0a' | '\x0d';
+non_eol : ' '  ~  '~' ;
+
+ascii_non_double_quote : (' '  ~  '!') | ('#'  ~  '~') | '\x09' | '\x0a' | '\x0d';
+ascii_non_single_quote : (' '  ~  '&') | ('('  ~  '~') | '\x09' | '\x0a' | '\x0d';
+
+ident_1 : "one of 389 XID_START" "zero or more of 608 XID_continue. puh";
+
+ident_start: ('A' ~ 'Z') |('a' ~ 'z') | '_';
+ident_continue: ident_start | ('0' ~ '9');
+ident : ident_start ident_continue * ;
+
+lifetime : '\'' ident ':' ;
+lt_param_defs : ( '&' ? '\''  ident) ,',' ;
+
+non_single_quote : ascii_non_single_quote ;
+non_double_quote : ascii_non_single_quote ;
+raw_string_body : character ;
+
+
+keyword :       "abstract"|
+                "alignof"|
+                "as"|
+                "become"|
+                "box"|
+                "break"|
+                "const"|
+                "continue"|
+                "crate"|
+                "do"|
+                "else"|
+                "enum"|
+                "extern"|
+                "false"|
+                "final"|
+                "fn"|
+                "for"|
+                "if"|
+                "impl"|
+                "in"|
+                "let"|
+                "loop"|
+                "macro"|
+                "match"|
+                "mod"|
+                "move"|
+                "mut"|
+                "offsetof"|
+                "override"|
+                "priv"|
+                "proc"|
+                "pub"|
+                "pure"|
+                "ref"|
+                "return"|
+                "Self"|
+                "self"|
+                "sizeof"|
+                "static"|
+                "struct"|
+                "super"|
+                "trait"|
+                "true"|
+                "type"|
+                "typeof"|
+                "unsafe"|
+                "unsized"|
+                "use"|
+                "virtual"|
+                "where"|
+                "while"|
+                "yield";

@@ -1,0 +1,351 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+id="canvas" width="720" height="1404" preserveAspectRatio="xMidYMid">
+
+<defs><style type="text/css">
+
+.TEXT {font-size:12px;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+.TEXTRULE {font-size:12px;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+.TEXTBOLD {font-size:12px;font-weight: bold;font-family: Lucida Console;stroke:none;fill:black;}
+.TEXTLITERAL {font-size:12px;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+.BOXID {fill:Khaki}
+.BOXLITERAL {fill:lightgreen}
+.BOXRESEREDWORD {fill:LightCyan}
+.BOXGROUND {fill:black}
+.PIL {fill:black}
+.RAILSEQ {stroke:black; fill:none; stroke-width:1.5}
+.RAILCHOICE {stroke:black; fill:none; stroke-width:1.5}
+.RAILITER {stroke:black; fill:none; stroke-width:1.5}
+.RAILOPT {stroke:black; fill:none; stroke-width:1.5}
+.BOXOUTLINE {stroke:green; stroke-width:1.5; }
+.TITEL {font-size:130%;font-weight: normal;font-family: Lucida Console;stroke:none;fill:black;}
+          </style></defs>
+<g>
+<text class="TITEL" x="8" y="75">Grammar filename: MDDocs/COMMANDS.txt</text>
+<text class="TEXTRULE" x="8" y="147">command</text>
+<text class="TEXTRULE" x="72" y="147">:</text>
+<line class="RAILSEQ" x1="96" y1="144" x2="216" y2="144"></line>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(108,162) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(204,162) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="120" y1="144" x2="176" y2="144"></line>
+<rect class="BOXGROUND" x="128.8" y="132" width="40" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="128" y="130.8" width="40" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="136" y="147">VER</text>
+
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(108,198) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(204,198) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="120" y1="180" x2="192" y2="180"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(108,180) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(204,180) rotate(180)"></path>
+<line class="RAILSEQ" x1="120" y1="180" x2="184" y2="180"></line>
+<rect class="BOXGROUND" x="128.8" y="168" width="48" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="128" y="166.8" width="48" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="136" y="183">HELP</text>
+
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(108,234) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(204,234) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="120" y1="216" x2="192" y2="216"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(108,216) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(204,216) rotate(180)"></path>
+<line class="RAILSEQ" x1="120" y1="216" x2="192" y2="216"></line>
+<rect class="BOXGROUND" x="128.8" y="204" width="56" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="128" y="202.8" width="56" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="136" y="219">CHECK</text>
+
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(108,270) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(204,270) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="120" y1="252" x2="192" y2="252"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(108,252) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(204,252) rotate(180)"></path>
+<line class="RAILSEQ" x1="120" y1="252" x2="184" y2="252"></line>
+<rect class="BOXGROUND" x="128.8" y="240" width="48" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="128" y="238.8" width="48" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="136" y="255">VIEW</text>
+
+<line class="RAILSEQ" x1="120" y1="288" x2="192" y2="288"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(108,288) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(204,288) rotate(180)"></path>
+<path class="RAILOPT" d="M 96,144 C 108,144 108,144 108,156 L 108,276 C 108,288 108,288 120,288"></path>
+<path class="RAILOPT" d="M 216,144 C 204,144 204,144 204,156 L 204,276 C 204,288 204,288 192,288"></path>
+<line class="RAILSEQ" x1="120" y1="288" x2="176" y2="288"></line>
+<rect class="BOXGROUND" x="128.8" y="276" width="40" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="128" y="274.8" width="40" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="136" y="291">GEN</text>
+
+<text class="TEXTRULE" x="8" y="363">VER</text>
+<text class="TEXTRULE" x="72" y="363">:</text>
+<line class="RAILSEQ" x1="96" y1="360" x2="216" y2="360"></line>
+<rect class="BOXGROUND" x="104.8" y="348" width="104" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="346.8" width="104" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="363">"--version"</text>
+
+<text class="TEXTRULE" x="8" y="435">HELP</text>
+<text class="TEXTRULE" x="72" y="435">:</text>
+<line class="RAILSEQ" x1="96" y1="432" x2="192" y2="432"></line>
+<rect class="BOXGROUND" x="104.8" y="420" width="80" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="418.8" width="80" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="435">"--help"</text>
+
+<text class="TEXTRULE" x="8" y="507">CHECK</text>
+<text class="TEXTRULE" x="72" y="507">:</text>
+<line class="RAILSEQ" x1="96" y1="504" x2="200" y2="504"></line>
+<rect class="BOXGROUND" x="104.8" y="492" width="88" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="490.8" width="88" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="507">"--check"</text>
+
+<line class="RAILSEQ" x1="200" y1="504" x2="288" y2="504"></line>
+<rect class="BOXGROUND" x="208.8" y="492" width="72" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="208" y="490.8" width="72" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="216" y="507">GRAMMER</text>
+
+<text class="TEXTRULE" x="8" y="579">VIEW</text>
+<text class="TEXTRULE" x="72" y="579">:</text>
+<line class="RAILSEQ" x1="96" y1="576" x2="240" y2="576"></line>
+<line class="RAILSEQ" x1="96" y1="576" x2="240" y2="576"></line>
+<line class="RAILSEQ" x1="96" y1="576" x2="240" y2="576"></line>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(108,594) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(228,594) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="120" y1="576" x2="208" y2="576"></line>
+<rect class="BOXGROUND" x="128.8" y="564" width="72" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="128" y="562.8" width="72" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="136" y="579">"--tty"</text>
+
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(108,630) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(228,630) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="120" y1="612" x2="216" y2="612"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(108,612) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(228,612) rotate(180)"></path>
+<line class="RAILSEQ" x1="120" y1="612" x2="208" y2="612"></line>
+<rect class="BOXGROUND" x="128.8" y="600" width="72" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="128" y="598.8" width="72" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="136" y="615">"--svg"</text>
+
+<line class="RAILSEQ" x1="120" y1="648" x2="216" y2="648"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(108,648) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(228,648) rotate(180)"></path>
+<path class="RAILOPT" d="M 96,576 C 108,576 108,576 108,588 L 108,636 C 108,648 108,648 120,648"></path>
+<path class="RAILOPT" d="M 240,576 C 228,576 228,576 228,588 L 228,636 C 228,648 228,648 216,648"></path>
+<line class="RAILSEQ" x1="120" y1="648" x2="216" y2="648"></line>
+<rect class="BOXGROUND" x="128.8" y="636" width="80" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="128" y="634.8" width="80" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="136" y="651">"--html"</text>
+
+<line class="RAILSEQ" x1="240" y1="576" x2="328" y2="576"></line>
+<rect class="BOXGROUND" x="248.8" y="564" width="72" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="248" y="562.8" width="72" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="256" y="579">GRAMMER</text>
+
+<line class="RAILSEQ" x1="328" y1="576" x2="472" y2="576"></line>
+<path class="RAILOPT" d="M 328,576 C 340,576 340,576 340,588 L 340,600 C 340,612 340,612 352,612"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(340,594) rotate(0) scale(0.8,0.8)"></path><path class="RAILOPT" d="M 472,576 C 460,576 460,576 460,588 L 460,600 C 460,612 460,612 448,612"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(460,594) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="352" y1="612" x2="448" y2="612"></line>
+<rect class="BOXGROUND" x="360.8" y="600" width="80" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="360" y="598.8" width="80" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="368" y="615">RESWORDS</text>
+
+<line class="RAILSEQ" x1="472" y1="576" x2="576" y2="576"></line>
+<path class="RAILOPT" d="M 472,576 C 484,576 484,576 484,588 L 484,600 C 484,612 484,612 496,612"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(484,594) rotate(0) scale(0.8,0.8)"></path><path class="RAILOPT" d="M 576,576 C 564,576 564,576 564,588 L 564,600 C 564,612 564,612 552,612"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(564,594) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="496" y1="612" x2="552" y2="612"></line>
+<rect class="BOXGROUND" x="504.8" y="600" width="40" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="504" y="598.8" width="40" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="512" y="615">OUT</text>
+
+<text class="TEXTRULE" x="8" y="723">GRAMMER</text>
+<text class="TEXTRULE" x="72" y="723">:</text>
+<line class="RAILSEQ" x1="96" y1="720" x2="664" y2="720"></line>
+<line class="RAILSEQ" x1="96" y1="720" x2="664" y2="720"></line>
+<line class="RAILSEQ" x1="96" y1="720" x2="664" y2="720"></line>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(108,756) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(652,756) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="120" y1="720" x2="288" y2="720"></line>
+<line class="RAILSEQ" x1="120" y1="720" x2="288" y2="720"></line>
+<line class="RAILSEQ" x1="120" y1="720" x2="288" y2="720"></line>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(132,738) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(276,738) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="144" y1="720" x2="264" y2="720"></line>
+<rect class="BOXGROUND" x="152.8" y="708" width="104" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="152" y="706.8" width="104" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="160" y="723">"--grammar"</text>
+
+<line class="RAILSEQ" x1="144" y1="756" x2="264" y2="756"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(132,756) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(276,756) rotate(180)"></path>
+<path class="RAILOPT" d="M 120,720 C 132,720 132,720 132,732 L 132,744 C 132,756 132,756 144,756"></path>
+<path class="RAILOPT" d="M 288,720 C 276,720 276,720 276,732 L 276,744 C 276,756 276,756 264,756"></path>
+<line class="RAILSEQ" x1="144" y1="756" x2="224" y2="756"></line>
+<rect class="BOXGROUND" x="152.8" y="744" width="64" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="152" y="742.8" width="64" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="160" y="759">"--gr"</text>
+
+<line class="RAILSEQ" x1="288" y1="720" x2="456" y2="720"></line>
+<rect class="BOXGROUND" x="296.8" y="708" width="152" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="296" y="706.8" width="152" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="304" y="723">grammar_file_name</text>
+
+<line class="RAILSEQ" x1="120" y1="792" x2="640" y2="792"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(108,792) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(652,792) rotate(180)"></path>
+<path class="RAILOPT" d="M 96,720 C 108,720 108,720 108,732 L 108,780 C 108,792 108,792 120,792"></path>
+<path class="RAILOPT" d="M 664,720 C 652,720 652,720 652,732 L 652,780 C 652,792 652,792 640,792"></path>
+<line class="RAILSEQ" x1="120" y1="792" x2="328" y2="792"></line>
+<line class="RAILSEQ" x1="120" y1="792" x2="328" y2="792"></line>
+<line class="RAILSEQ" x1="120" y1="792" x2="328" y2="792"></line>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(132,810) rotate(0) scale(0.8,0.8)"></path><path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(316,810) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="144" y1="792" x2="304" y2="792"></line>
+<rect class="BOXGROUND" x="152.8" y="780" width="144" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="152" y="778.8" width="144" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="160" y="795">"--groupgrammar"</text>
+
+<line class="RAILSEQ" x1="144" y1="828" x2="304" y2="828"></line>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(132,828) rotate(270)"></path>
+<path class="RAILSEQ" d="M 12,0 C 0,0 0,0 0,12" transform="translate(316,828) rotate(180)"></path>
+<path class="RAILOPT" d="M 120,792 C 132,792 132,792 132,804 L 132,816 C 132,828 132,828 144,828"></path>
+<path class="RAILOPT" d="M 328,792 C 316,792 316,792 316,804 L 316,816 C 316,828 316,828 304,828"></path>
+<line class="RAILSEQ" x1="144" y1="828" x2="240" y2="828"></line>
+<rect class="BOXGROUND" x="152.8" y="816" width="80" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="152" y="814.8" width="80" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="160" y="831">"--grgr"</text>
+
+<line class="RAILSEQ" x1="328" y1="792" x2="640" y2="792"></line>
+<rect class="BOXGROUND" x="336.8" y="780" width="296" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="336" y="778.8" width="296" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="344" y="795">file_with_set_of_grammar_file_names</text>
+
+<text class="TEXTRULE" x="8" y="903">RESWORDS</text>
+<text class="TEXTRULE" x="72" y="903">:</text>
+<line class="RAILSEQ" x1="96" y1="900" x2="224" y2="900"></line>
+<rect class="BOXGROUND" x="104.8" y="888" width="112" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="886.8" width="112" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="903">"--reswords"</text>
+
+<line class="RAILSEQ" x1="224" y1="900" x2="464" y2="900"></line>
+<rect class="BOXGROUND" x="232.8" y="888" width="224" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="232" y="886.8" width="224" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="240" y="903">file_with_reserved_symbols</text>
+
+<text class="TEXTRULE" x="8" y="975">OUT</text>
+<text class="TEXTRULE" x="72" y="975">:</text>
+<line class="RAILSEQ" x1="96" y1="972" x2="320" y2="972"></line>
+<line class="RAILSEQ" x1="96" y1="972" x2="320" y2="972"></line>
+<line class="RAILSEQ" x1="96" y1="972" x2="184" y2="972"></line>
+<rect class="BOXGROUND" x="104.8" y="960" width="72" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="958.8" width="72" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="975">"--out"</text>
+
+<line class="RAILSEQ" x1="184" y1="972" x2="320" y2="972"></line>
+<rect class="BOXGROUND" x="192.8" y="960" width="120" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="192" y="958.8" width="120" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="200" y="975">out_file_name</text>
+
+<text class="TEXTRULE" x="8" y="1047">SEED</text>
+<text class="TEXTRULE" x="72" y="1047">:</text>
+<line class="RAILSEQ" x1="96" y1="1044" x2="192" y2="1044"></line>
+<rect class="BOXGROUND" x="104.8" y="1032" width="80" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="1030.8" width="80" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="1047">"--seed"</text>
+
+<line class="RAILSEQ" x1="192" y1="1044" x2="304" y2="1044"></line>
+<rect class="BOXGROUND" x="200.8" y="1032" width="96" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="200" y="1030.8" width="96" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="208" y="1047">seednumber</text>
+
+<text class="TEXTRULE" x="8" y="1119">MAXSTEPS</text>
+<text class="TEXTRULE" x="72" y="1119">:</text>
+<line class="RAILSEQ" x1="96" y1="1116" x2="224" y2="1116"></line>
+<rect class="BOXGROUND" x="104.8" y="1104" width="112" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="1102.8" width="112" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="1119">"--maxsteps"</text>
+
+<line class="RAILSEQ" x1="224" y1="1116" x2="304" y2="1116"></line>
+<rect class="BOXGROUND" x="232.8" y="1104" width="64" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="232" y="1102.8" width="64" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="240" y="1119">number</text>
+
+<text class="TEXTRULE" x="8" y="1191">GEN</text>
+<text class="TEXTRULE" x="72" y="1191">:</text>
+<line class="RAILSEQ" x1="96" y1="1188" x2="216" y2="1188"></line>
+<rect class="BOXGROUND" x="104.8" y="1176" width="104" height="24" rx="10" ry="10"></rect>
+
+<rect class="BOXLITERAL" x="104" y="1174.8" width="104" height="24" rx="10" ry="10"></rect>
+
+<text class="TEXT" x="112" y="1191">"--genrule"</text>
+
+<line class="RAILSEQ" x1="216" y1="1188" x2="320" y2="1188"></line>
+<rect class="BOXGROUND" x="224.8" y="1176" width="88" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="224" y="1174.8" width="88" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="232" y="1191">rule_name</text>
+
+<line class="RAILSEQ" x1="320" y1="1188" x2="464" y2="1188"></line>
+<path class="RAILOPT" d="M 320,1188 C 332,1188 332,1188 332,1200 L 332,1212 C 332,1224 332,1224 344,1224"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(332,1206) rotate(0) scale(0.8,0.8)"></path><path class="RAILOPT" d="M 464,1188 C 452,1188 452,1188 452,1200 L 452,1212 C 452,1224 452,1224 440,1224"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(452,1206) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="344" y1="1224" x2="440" y2="1224"></line>
+<rect class="BOXGROUND" x="352.8" y="1212" width="80" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="352" y="1210.8" width="80" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="360" y="1227">RESWORDS</text>
+
+<line class="RAILSEQ" x1="464" y1="1188" x2="576" y2="1188"></line>
+<path class="RAILOPT" d="M 464,1188 C 476,1188 476,1188 476,1200 L 476,1212 C 476,1224 476,1224 488,1224"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(476,1206) rotate(0) scale(0.8,0.8)"></path><path class="RAILOPT" d="M 576,1188 C 564,1188 564,1188 564,1200 L 564,1212 C 564,1224 564,1224 552,1224"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(564,1206) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="488" y1="1224" x2="552" y2="1224"></line>
+<rect class="BOXGROUND" x="496.8" y="1212" width="48" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="496" y="1210.8" width="48" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="504" y="1227">SEED</text>
+
+<line class="RAILSEQ" x1="576" y1="1188" x2="720" y2="1188"></line>
+<path class="RAILOPT" d="M 576,1188 C 588,1188 588,1188 588,1200 L 588,1212 C 588,1224 588,1224 600,1224"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(588,1206) rotate(0) scale(0.8,0.8)"></path><path class="RAILOPT" d="M 720,1188 C 708,1188 708,1188 708,1200 L 708,1212 C 708,1224 708,1224 696,1224"></path>
+<path class="PIL" d="M-7,-8 L0,8 7,-8 0,0 -7,-8" transform="translate(708,1206) rotate(180) scale(0.8,0.8)"></path><line class="RAILSEQ" x1="600" y1="1224" x2="696" y2="1224"></line>
+<rect class="BOXGROUND" x="608.8" y="1212" width="80" height="24" rx="0" ry="0"></rect>
+
+<rect class="BOXID" x="608" y="1210.8" width="80" height="24" rx="0" ry="0"></rect>
+
+<text class="TEXT" x="616" y="1227">MAXSTEPS</text>
+
+</g></svg>

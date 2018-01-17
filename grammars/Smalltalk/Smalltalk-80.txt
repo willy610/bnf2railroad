@@ -1,0 +1,49 @@
+digit : '0' | '1' |'2'|'3'|'4'|'5'|'6'|'7'|'8'|'9';
+digits : digit + ;
+number : (digits 'r')? '-' ? digits ( '.' digits )? ('e' '-' ? digits)? ;
+letter : 'A' ~ 'Z' | 'a' ~ 'z' ;
+special_character : '+' | '/' | '\' | '*' |'~'|'<'|'>'|'='|'@'|'%'| '|' |'&'|'?' | '!'|',';
+character : ('[' | ']' | '{' | '}' | '(' | ')' | '^' | ';' | '$' | '#' | ':' | '.' | "'" )
+          | (digit | letter | special_character) ;
+return_operator : '^'; 
+assignment_operator : ":=" ;
+identifier : letter ( letter | digit ) * ;
+symbol : identifier | binary_selector | keyword + ;
+symbol_constant : '#' symbol ;
+character_constant : '$' (character | "'" | '"') ;
+string : "'" ( character | (("'" "'") | '"' ) ) * "'" ;
+comment : '"' ( character | (('"' '"') | "'") ) * '"' ;
+array :  '('  ( number | symbol |string | character_constant | array ) * ')' ;
+array_constant : '#' array ;
+literal : number | symbol_constant | character_constant | string | array_constant ;
+variable_name : identifier;
+unary_selector : identifier;
+binary_selector : ('-' | special_character) special_character ? ;
+keyword : identifier ':' ; 
+primary : variable_name | literal | block | ( '(' expression ')' ) ;
+unary_object_description : primary | binary_expression ;
+binary_object_description : unary_object_description | binary_expression;
+unary_expression : unary_object_description  binary_expression ;
+binary_expression : binary_object_description binary_selector  unary_object_description ;
+keyword_expression : unary_object_description ( keyword binary_object_description)+ ;
+message_expression : unary_expression | binary_expression | keyword_expression ;
+cascaded_message_expression : message_expression (
+  ';' ( unary_selector  
+  | (binary_selector  unary_object_description) 
+  | (keyword binary_object_description )+
+))* ;
+expression : ( (variable_name assignment_operator)+ )? 
+(primary | message_expression | cascaded_message_expression); 
+statements : (return_operator expression '.' ? ) |
+ (expression ('.' statements *)?);
+ block : '[' 
+          (
+            ((':' variable_name)+ '|' statements) ?
+          | 
+          statements
+          )
+          ']' ;
+temporaries : '|' variable_name * '|' ;
+message_pattern :  unary_selector | binary_selector | (keyword variable_name)+; 
+method : message_pattern ( (temporaries statements) |statements ? );
+

@@ -1,0 +1,1 @@
+const_item : "const" ident ':' type '=' expr ';' ;
