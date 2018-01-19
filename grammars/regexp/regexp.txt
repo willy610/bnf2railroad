@@ -1,0 +1,35 @@
+pattern  :  js_regexp_literal |  regexp_choice  ;
+js_regexp_literal  : '/'  regexp_choice  '/'  'g' ?   'i'  ?   'm'  ? ;
+regexp_choice  :  regexp_sequence  ,'|'  ;
+regexp_sequence  : ( regexp_factor  ( regexp_quantifier ) ? ) + ;
+regexp_factor  : (any_unicode - AandB) | regexp_escape | regexp_class | regexp_group ;
+
+regexp_escape  : '\\'  ( 'f' | 'n' | 'r' | 't' | ( 'u'  "xxxx" ) | ( 'B' | 'D' | 'S' | 'W' ) | ( 'b' | 'd' | 's' | 'w' | any_special_character | integer) ) ;
+regexp_class  : '['  [ '^' ]  ( ( any_unicode - CandB | regexp_class_escape ) ,'-' ) ?  ']' ;
+
+EorF:  any_unicode - CandB | regexp_class_escape ; 
+regexp_class : '[' '^' ?  EorF ('-'? EorF) * ']' ;
+
+regexp_group  : '('  (  '?'  ( ':' | '=' | '!' ) )?  regexp_choice  ')' ;
+
+regexp_class_escape  : '\\'  ( 'b' | 'f' | 'n' | 'r' | 't' | ( 'u'  "xxxx" ) | ( 'D' | 'S' | 'W' ) | ( 'd' | 's' | 'w' | any_special_character ) ) ;
+
+regexp_quantifier  : ( '?' | '*' | '+' | ( '{'  integer  [ ','  [ integer ] ]  '}' ) )  [ '?' ] ;
+
+controllercharacter : '.' | '^' | '$' ;
+
+A: '\\' | '/' | '[' | ']' | '(' | ')' | '{' | '}' |'?'| '+'| '*' | '|';
+B: '.' | '^' | '$' ;
+C: '\\' | '/' | '[' | ']'  '-';
+
+AandB : '\\' | '/' | '[' | ']' | '(' | ')' | '{' | '}' |'?'| '+'| '*' | '|' | '.' | '^' | '$' ;
+CandB : '\\' | '/' | '[' | ']'  '-' | '.' | '^' | '$' ;
+
+integer : ('0' ~ '9')+;
+letterordigit : ('0' ~ '9') | ('A' ~ 'Z') | ('a' ~ 'z');
+asciix20x7E : ' ' ~ '~' ;
+any_special_character : asciix20x7E - letterordigit ;
+
+
+
+
